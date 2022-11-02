@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bundled Components Test</title>
-    <link rel="stylesheet" href="./dist/faucet/bundle.css">
-    <script src="./dist/faucet/bundle.js" type="module"></script>
+    <!-- Faucet -->
+    <!-- <link rel="stylesheet" href="./dist/faucet/bundle.css">
+    <script src="./dist/faucet/bundle.js" type="module"></script> -->
+    <!-- Vite -->
+    <link rel="stylesheet" href="./dist/style.css">
+    <script src="./dist/vite/bundle.js" type="module"></script>
+    <!-- ES Build -->
+    <!-- <link rel="stylesheet" href="./dist/esbuild/bundle.css">
+        <script src="./dist/esbuild/bundle.js" type="module"></script> -->
+    <!-- Rollup -->
+    <!-- <link rel="stylesheet" href="./dist/rollup/bundle.css">
+        <script src="./dist/rollup/bundle.js" type="module"></script> -->
     <script type="module">
-        import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js";
-        import { DownloadLinkController } from "./dist/faucet/bundle.js"
+        import { Application } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js";
+        // Faucet
+        // import { DownloadLinkController } from "./dist/faucet/bundle.js"
+        // Vite
+        import { DownloadLinkController } from "./dist/vite/bundle.js"
+        // ESBuild
+        // import { DownloadLinkController } from "./dist/esbuild/bundle.js"
+        // Rollup
+        // import { DownloadLinkController } from "./dist/rollup/bundle.js"
 
         const application = Application.start();
         application.register("dl", DownloadLinkController);
