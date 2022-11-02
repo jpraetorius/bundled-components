@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bundled Components Test</title>
-    <link rel="stylesheet" href="src/accordeon/accordeon.css">
-    <script src="src/accordeon/accordeon.js" type="module"></script>
-    <link rel="stylesheet" href="src/download-link/download-link.css">
+    <link rel="stylesheet" href="./dist/faucet/bundle.css">
+    <script src="./dist/faucet/bundle.js" type="module"></script>
     <script type="module">
         import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js";
-        import { DownloadLinkController } from "./src/download-link/download-link.js"
+        import { DownloadLinkController } from "./dist/faucet/bundle.js"
 
         const application = Application.start();
         application.register("dl", DownloadLinkController);
