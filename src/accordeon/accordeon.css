@@ -1,0 +1,24 @@
+details {
+    border: 1px solid #aaa;
+    border-radius: .25rem;
+    padding: .5rem .5rem 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5rem -.5rem 0;
+    padding: .5rem;
+}
+
+details[open] {
+    padding: .5rem;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5rem;
+}
+
+details + details {
+    margin-block-start: .5rem;
+}

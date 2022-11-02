@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundled Components Test</title>
+    <link rel="stylesheet" href="src/accordeon/accordeon.css">
+    <script src="src/accordeon/accordeon.js" type="module"></script>
+    <link rel="stylesheet" href="src/download-link/download-link.css">
+    <script type="module">
+        import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js";
+        import { DownloadLinkController } from "./src/download-link/download-link.js"
+
+        const application = Application.start();
+        application.register("dl", DownloadLinkController);
+    </script>
+</head>
+<body>
+    <h2>Accordeon</h2>
+    <ac-cordeon>
+        <details>
+            <summary>Summary 1</summary>
+            Details 1.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo repudiandae qui ratione eum perferendis
+            optio eligendi molestiae veniam. Quidem aut aperiam tempora laboriosam dolorem nihil tempore consectetur,
+            quisquam autem?
+        </details>
+        <details>
+            <summary>Summary 2</summary>
+            Details 2.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo repudiandae qui ratione eum perferendis
+            optio eligendi molestiae veniam. Quidem aut aperiam tempora laboriosam dolorem nihil tempore consectetur,
+            quisquam autem?
+        </details>
+        <details>
+            <summary>Summary 3</summary>
+            Details 3.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo repudiandae qui ratione eum perferendis
+            optio eligendi molestiae veniam. Quidem aut aperiam tempora laboriosam dolorem nihil tempore consectetur,
+            quisquam autem?
+        </details>
+        <details>
+            <summary>Summary 4</summary>
+            Details 4.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo repudiandae qui ratione eum perferendis
+            optio eligendi molestiae veniam. Quidem aut aperiam tempora laboriosam dolorem nihil tempore consectetur,
+            quisquam autem?
+        </details>
+    </ac-cordeon>
+    <h2>Download Link</h2>
+    <div class="download-link" data-controller="dl">
+        <a href="#" data-action="click->dl#showDialog">→ Download the thing</a>
+        <div class="download-dialog" data-dl-target="dialog">
+            <div class="download-dialog-header">Configure</div>
+            <div class="download-dialog-body">
+                <ul>
+                    <li><input type="checkbox" name="option-1" id="option-1"><label for="option-1">Option 1</label></li>
+                    <li><input type="checkbox" name="option-2" id="option-2"><label for="option-2">Option 2</label></li>
+                    <li><input type="checkbox" name="option-3" id="option-3"><label for="option-3">Option 3</label></li>
+                    <li><input type="checkbox" name="option-4" id="option-4"><label for="option-4">Option 4</label></li>
+                </ul>
+                <button>Download</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

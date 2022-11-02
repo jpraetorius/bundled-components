@@ -1,0 +1,94 @@
+.download-link a {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.download-dialog {
+    min-width: 30rem;
+    border: 1px solid var(--gray);
+    border-radius: .25rem;
+    padding: 1rem;
+    box-shadow: var(--shadow-3);
+    font-family: sans-serif;
+}
+.download-dialog-header {
+    margin: -1rem -1rem 0 -1rem;
+    padding: .5rem;
+    background-color: var(--teal-4);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.download-dialog-body {
+    padding-block-start: 1rem;
+}
+.download-dialog-body ul {
+    list-style: none;
+    
+}
+.download-dialog-body ul li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    display: flex;
+    gap: .75rem;
+    cursor: pointer;
+}
+
+.download-dialog-body ul li input[type=checkbox] {
+    height: 1.5rem;
+    width: 1.5rem;
+    appearance: none;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.125s;
+    background-color: var(--teal-4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-dialog-body ul li input[type=checkbox]:checked {
+    background-color: var(--teal-9);
+    color: #fff;
+}
+.download-dialog-body ul li input[type=checkbox]:checked::after {
+    color: #fff;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M.5,8.55l2.73,3.51a1,1,0,0,0,.78.39,1,1,0,0,0,.78-.36L13.5,1.55' fill='none' stroke='%23fffefe' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.download-dialog-body button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--teal-4);
+    color: #fff;
+    padding: .5rem;
+    border: 1px solid var(--gray);
+    border-radius: .25rem;
+}
+
+.download-dialog-body button:hover, .download-dialog-body button:active {
+     background-color: var(--teal-9);
+}
+
+.hidden {
+    display: none;
+}
+
+:root {
+  --shadow-color: 220 3% 15%;
+  --shadow-strength: 1%;
+  --shadow-3: 
+    0 -1px 3px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 1px 2px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 2px 5px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 4px 12px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 12px 15px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+  --teal-4: #20c997;
+  --teal-9: #087f5b;
+  --gray: #aaa;
+}
