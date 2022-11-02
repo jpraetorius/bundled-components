@@ -2,7 +2,8 @@ module.exports = {
     js: [{
         source: "./src/index.js",
         target: "./dist/faucet/bundle.js",
-        format: "esm"
+        format: "esm",
+        compact: "mangle"
     }],
     css: [{
         source: "./src/index.css",

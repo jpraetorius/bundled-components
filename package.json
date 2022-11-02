@@ -6,12 +6,12 @@
   "type": "module",
   "scripts": {
     "serve": "donny",
-    "build-faucet": "faucet",
+    "build-faucet": "faucet --compact",
     "build-vite": "vite build",
     "build-esbuild": "npm run build-esbuild-js && npm run build-esbuild-css",
     "build-esbuild-js": "esbuild src/index.js --bundle --minify --format=esm --outfile=dist/esbuild/bundle.js",
     "build-esbuild-css": "esbuild src/index.css --bundle --minify --outfile=dist/esbuild/bundle.css",
-    "build-rollup": "",
+    "build-rollup": "rollup -c",
     "build": "npm run build-faucet && npm run build-vite && npm run build-esbuild && npm run build-rollup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,12 +21,18 @@
     "stimulus": "^3.1.1"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "donny": "^0.3.0",
     "esbuild": "^0.15.12",
     "faucet-pipeline-core": "^1.7.0",
     "faucet-pipeline-css": "^0.2.1",
     "faucet-pipeline-js": "^2.1.8",
+    "faucet-pipeline-jsmin": "^2.1.8",
+    "postcss-import": "^15.0.0",
     "rollup": "^2.79.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "vite": "^3.2.2"
   }
 }
