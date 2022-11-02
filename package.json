@@ -8,9 +8,11 @@
     "serve": "donny",
     "build-faucet": "faucet",
     "build-vite": "vite build",
-    "build-esbuild": "",
+    "build-esbuild": "npm run build-esbuild-js && npm run build-esbuild-css",
+    "build-esbuild-js": "esbuild src/index.js --bundle --minify --format=esm --outfile=dist/esbuild/bundle.js",
+    "build-esbuild-css": "esbuild src/index.css --bundle --minify --outfile=dist/esbuild/bundle.css",
     "build-rollup": "",
-    "build": "build-faucet && build-vite && build-esbuild && build-rollup",
+    "build": "npm run build-faucet && npm run build-vite && npm run build-esbuild && npm run build-rollup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "INNOQ",
