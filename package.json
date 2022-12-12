@@ -18,7 +18,7 @@
   "author": "INNOQ",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "stimulus": "^3.1.1"
+    "stimulus": "^3.2.1"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
