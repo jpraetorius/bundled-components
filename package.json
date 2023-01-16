@@ -25,7 +25,7 @@
     "donny": "^0.3.0",
     "esbuild": "^0.16.16",
     "faucet-pipeline-core": "^1.7.0",
-    "faucet-pipeline-css": "^0.2.1",
+    "faucet-pipeline-css": "^0.3.0",
     "faucet-pipeline-js": "^2.1.8",
     "faucet-pipeline-jsmin": "^2.1.8",
     "postcss-import": "^15.1.0",
