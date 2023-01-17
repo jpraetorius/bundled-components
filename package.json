@@ -24,7 +24,7 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "donny": "^0.3.0",
     "esbuild": "^0.17.0",
-    "faucet-pipeline-core": "^1.7.0",
+    "faucet-pipeline-core": "^2.0.0",
     "faucet-pipeline-css": "^0.3.0",
     "faucet-pipeline-js": "^2.1.8",
     "faucet-pipeline-jsmin": "^2.1.8",
