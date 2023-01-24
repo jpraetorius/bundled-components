@@ -27,7 +27,7 @@
     "faucet-pipeline-core": "^2.0.0",
     "faucet-pipeline-css": "^0.3.0",
     "faucet-pipeline-js": "^3.0.0",
-    "faucet-pipeline-jsmin": "^2.1.8",
+    "faucet-pipeline-jsmin": "^3.0.0",
     "postcss-import": "^15.1.0",
     "rollup": "^2.79.1",
     "rollup-plugin-node-resolve": "^5.2.0",
