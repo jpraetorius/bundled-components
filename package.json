@@ -23,7 +23,7 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
     "donny": "^0.3.0",
-    "esbuild": "^0.17.10",
+    "esbuild": "^0.17.11",
     "faucet-pipeline-core": "^2.0.0",
     "faucet-pipeline-css": "^0.3.0",
     "faucet-pipeline-js": "^3.0.0",
